@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Project - Bulding A Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./myfav.ico">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@151&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="player_container">
+        <section class="playlist">
+            <p class="my_playlist">My Playlist</p>
+            <div class="append_album">
+                <!-- <div><span>artist</span> <span>title</span></span> <span>3:20</span></div> -->
+            </div>
+            <button class="play_all">Play All</button>
+        </section>
+        <section class="playing_interface">
+            <img src="./splash_mixed_colors.jpg" alt="NO PIC" class="album_image">
+            <div class="now_playing_display"></div>
+            <div class="play_pause_container">
+                <input type="range" name="" id="range_indicator" value="0" min="0">
+                <div class="play">
+                    <div><span class="pl">play</span> <span class="pa">stop</span></div>
+
+                    <div><span class="pause">pause</span>
+                        <span class="resume">resume</span>
+                    </div>
+
+                    <span class="next">next</span>
+                    <span class="prev">previous</span> <span class="mut">mute <span class="ind">OFF</span></span><span
+                        class="repeat">repeat <span class="rp">OFF</span></span>
+                </div>
+            </div>
+            <div class="repeat_logo"><object data="./repeat-solid.svg" class="re_logo"> </object></div>
+
+            <div class="timiming"></div>
+            <div class="mute"><object data="./bell-slash-solid.svg" class="m"> </object></div>
+
+        </section>
+    </div> <br>
+    <footer>A project developed by Sunday Olorundipe <br> Get intouch ssedipe@gmail.com</footer>
+
+    <audio>
+        <source src="./Coldplay - The Hardest Part.mp3">
+        <source src="./DIIV - Human.mp3">
+        <source src="./Cloud Nothings - Our Plans.mp3">
+        <source src="./Caveman - Human (Audio).mp3">
+        <source src="./SEVEN LIFES - Beautiful Nubia.mp3">
+        <source src="./Beautiful Nubia - Jangbalajugbu.mp3">
+        <source src="./Car Seat Headrest - Drunk DriversKiller Whales.mp3">
+    </audio>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+<!-- div loose position -->
